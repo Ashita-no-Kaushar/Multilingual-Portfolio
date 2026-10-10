@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap");
+
+.portfolio-current {
+  color-scheme: light;
+  --button-outline: rgba(42, 34, 27, .14);
+  --badge-outline: rgba(42, 34, 27, .08);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(42, 34, 27, .035);
+  --elevate-2: rgba(42, 34, 27, .08);
+  --background: 43 38% 96%;
+  --foreground: 25 22% 15%;
+  --border: 34 17% 76%;
+  --card: 45 44% 99%;
+  --card-foreground: 25 22% 15%;
+  --card-border: 34 17% 76%;
+  --sidebar: 45 44% 99%;
+  --sidebar-foreground: 25 22% 15%;
+  --sidebar-border: 34 17% 76%;
+  --sidebar-primary: 17 69% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 43 38% 91%;
+  --sidebar-accent-foreground: 25 22% 15%;
+  --sidebar-ring: 17 69% 48%;
+  --popover: 45 44% 99%;
+  --popover-foreground: 25 22% 15%;
+  --popover-border: 34 17% 76%;
+  --primary: 17 69% 48%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 43 38% 90%;
+  --secondary-foreground: 25 22% 15%;
+  --muted: 40 23% 91%;
+  --muted-foreground: 26 12% 39%;
+  --accent: 45 68% 78%;
+  --accent-foreground: 25 22% 15%;
+  --destructive: 0 68% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 34 17% 76%;
+  --ring: 17 69% 48%;
+  --chart-1: 17 69% 48%;
+  --chart-2: 43 60% 50%;
+  --chart-3: 154 27% 37%;
+  --chart-4: 208 35% 48%;
+  --chart-5: 25 22% 28%;
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --primary-border: hsl(var(--primary));
+  --secondary-border: hsl(var(--secondary));
+  --muted-border: hsl(var(--muted));
+  --accent-border: hsl(var(--accent));
+  --destructive-border: hsl(var(--destructive));
+  --app-font-sans: 'Inter', sans-serif;
+  --app-font-serif: Georgia, serif;
+  --app-font-mono: Menlo, monospace;
+  --radius: .65rem;
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  background-image: radial-gradient(hsl(var(--foreground) / .075) .75px, transparent .75px);
+  background-size: 18px 18px;
+  color: hsl(var(--foreground));
+  font-family: var(--app-font-sans);
+}
+
+.portfolio-current .hero-section {
+  isolation: isolate;
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(43 45% 93%) 100%);
+}
+
+.portfolio-current .hero-section::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, hsl(var(--primary) / .09), transparent 35%);
+  content: "";
+  pointer-events: none;
+}
+
+.portfolio-current .hero-art-card {
+  background-image: linear-gradient(hsl(var(--foreground) / .025) 1px, transparent 1px);
+  background-size: 100% 5px;
+}
+
+.portfolio-current .font-headline,
+.portfolio-current .font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.portfolio-current .font-body {
+  font-family: 'Inter', sans-serif;
+}

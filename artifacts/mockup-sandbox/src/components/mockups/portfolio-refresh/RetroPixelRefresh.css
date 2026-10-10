@@ -1,0 +1,447 @@
+.portfolio-retro {
+  --paper: 43 42% 93%;
+  --paper-light: 44 49% 97%;
+  --ink: 25 24% 13%;
+  --line: 25 24% 13%;
+  --orange: 17 91% 52%;
+  --secondary: 164 28% 39%;
+  --quiet: 26 10% 37%;
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --border: 31 18% 67%;
+  --card: var(--paper-light);
+  --card-foreground: var(--ink);
+  --card-border: var(--ink);
+  --popover: var(--paper-light);
+  --popover-foreground: var(--ink);
+  --primary: var(--orange);
+  --primary-foreground: 25 24% 13%;
+  --secondary: 43 30% 87%;
+  --secondary-foreground: var(--ink);
+  --muted: 43 28% 88%;
+  --muted-foreground: var(--quiet);
+  --accent: 164 28% 83%;
+  --accent-foreground: var(--ink);
+  --destructive: 0 64% 43%;
+  --destructive-foreground: 43 42% 93%;
+  --input: 31 18% 58%;
+  --ring: var(--orange);
+  --chart-1: var(--orange);
+  --chart-2: var(--secondary);
+  --chart-3: 42 58% 55%;
+  --chart-4: 25 24% 13%;
+  --chart-5: 164 28% 39%;
+  --radius: 0;
+  min-height: 100dvh;
+  background-color: hsl(var(--background));
+  background-image:
+    radial-gradient(hsl(var(--ink) / .09) .65px, transparent .65px),
+    linear-gradient(90deg, transparent 0 49.85%, hsl(var(--ink) / .018) 50%, transparent 50.15%);
+  background-size: 15px 15px, 100% 100%;
+  color: hsl(var(--foreground));
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+}
+
+.portfolio-retro *,
+.portfolio-retro *::before,
+.portfolio-retro *::after {
+  border-radius: 0 !important;
+}
+
+.portfolio-retro :focus-visible {
+  outline: 3px solid hsl(var(--orange));
+  outline-offset: 4px;
+}
+
+.portfolio-retro [id] {
+  scroll-margin-top: 6rem;
+}
+
+.portfolio-retro .retro-skip-link {
+  position: fixed;
+  z-index: 100;
+  top: .75rem;
+  left: .75rem;
+  transform: translateY(-160%);
+  border: 2px solid hsl(var(--ink));
+  background: hsl(var(--orange));
+  padding: .65rem .9rem;
+  color: hsl(var(--ink));
+  font: 700 .8rem/1 'Space Grotesk', sans-serif;
+  box-shadow: 4px 4px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .retro-skip-link:focus {
+  transform: translateY(0);
+}
+
+.portfolio-retro .container {
+  width: min(100% - 2.5rem, 1160px);
+}
+
+.portfolio-retro .font-headline,
+.portfolio-retro .font-heading,
+.portfolio-retro h1,
+.portfolio-retro h2,
+.portfolio-retro h3 {
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  letter-spacing: -.045em;
+}
+
+.portfolio-retro .font-body,
+.portfolio-retro p,
+.portfolio-retro label,
+.portfolio-retro input,
+.portfolio-retro textarea,
+.portfolio-retro select,
+.portfolio-retro button {
+  font-family: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+}
+
+.portfolio-retro .font-mono,
+.portfolio-retro code {
+  font-family: 'Spline Sans Mono', 'Courier New', monospace;
+}
+
+.portfolio-retro .hero-section {
+  isolation: isolate;
+  min-height: 100svh;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+  background:
+    linear-gradient(90deg, transparent 0 69%, hsl(var(--secondary) / .19) 69% 100%),
+    hsl(var(--paper));
+}
+
+.portfolio-retro .hero-section::before {
+  z-index: -1;
+  inset: auto 0 0;
+  height: 9px;
+  background: repeating-linear-gradient(90deg, hsl(var(--ink)) 0 12px, transparent 12px 20px);
+  opacity: .8;
+}
+
+.portfolio-retro .hero-section > .container {
+  gap: clamp(2.5rem, 6vw, 6.5rem);
+}
+
+.portfolio-retro .hero-section h1 {
+  max-width: 760px;
+  font-size: clamp(3.8rem, 9vw, 8rem);
+  line-height: .88;
+  letter-spacing: -.085em;
+}
+
+.portfolio-retro .hero-section h1 span {
+  color: hsl(var(--orange));
+}
+
+.portfolio-retro .hero-section h2 {
+  max-width: 700px;
+  font-size: clamp(1.35rem, 2.5vw, 2.1rem);
+  line-height: 1.18;
+}
+
+.portfolio-retro .hero-section p {
+  color: hsl(var(--quiet));
+}
+
+.portfolio-retro .hero-section .hero-art-card,
+.portfolio-retro .hero-section .hero-art-card > div {
+  border: 2px solid hsl(var(--ink));
+  background-color: hsl(var(--paper-light));
+}
+
+.portfolio-retro .hero-section .hero-art-card {
+  padding: clamp(1rem, 2.4vw, 1.75rem);
+  box-shadow: 9px 9px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .hero-section .hero-art-card > div:nth-child(2) {
+  background-color: hsl(var(--secondary) / .2);
+}
+
+.portfolio-retro .hero-section .hero-art-card > div:nth-child(2) > div > div {
+  border-color: hsl(var(--ink));
+}
+
+.portfolio-retro .hero-section .hero-art-card > div:nth-child(2) > div > div > div {
+  background-color: hsl(var(--paper-light));
+}
+
+.portfolio-retro .hero-section .hero-art-card > div:nth-child(2) > div > div:nth-child(6) > div {
+  background-color: hsl(var(--orange));
+}
+
+.portfolio-retro .hero-section .hero-art-card .bg-\[\#fff2a6\] {
+  background-color: hsl(43 68% 74%);
+}
+
+.portfolio-retro .hero-section .hero-art-card .shadow-\[3px_3px_0_hsl\(var\(--foreground\)\)\] {
+  box-shadow: 3px 3px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .hero-section .hero-art-card > div:last-child > div:last-child {
+  font-size: 0;
+}
+
+.portfolio-retro .hero-section .hero-art-card > div:last-child > div:last-child::after {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: hsl(var(--orange));
+  content: "";
+  box-shadow: 7px 0 hsl(var(--orange)), 14px 0 hsl(var(--orange)), 0 7px hsl(var(--orange)), 14px 7px hsl(var(--orange)), 0 14px hsl(var(--orange)), 7px 14px hsl(var(--orange)), 14px 14px hsl(var(--orange));
+}
+
+.portfolio-retro .hero-section .hero-art-card ~ span {
+  border: 2px solid hsl(var(--ink));
+  box-shadow: 3px 3px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .hero-section .border-primary {
+  border-color: hsl(var(--orange));
+}
+
+.portfolio-retro .hero-section .border-l-2 {
+  border-left-width: 4px;
+}
+
+.portfolio-retro .hero-section button,
+.portfolio-retro .hero-section a[class*="inline-flex"],
+.portfolio-retro .retro-section button,
+.portfolio-retro .retro-section a[class*="inline-flex"] {
+  min-height: 42px;
+  border: 2px solid hsl(var(--ink));
+  box-shadow: 4px 4px 0 hsl(var(--ink));
+  transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease;
+}
+
+.portfolio-retro .hero-section button:hover,
+.portfolio-retro .hero-section a[class*="inline-flex"]:hover,
+.portfolio-retro .retro-section button:hover,
+.portfolio-retro .retro-section a[class*="inline-flex"]:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .hero-section select {
+  border: 2px solid hsl(var(--ink));
+  background: hsl(var(--paper-light));
+}
+
+.portfolio-retro .retro-sections {
+  border-top: 2px solid hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section {
+  position: relative;
+  border-bottom: 2px solid hsl(var(--ink));
+  scroll-margin-top: 5.5rem;
+}
+
+.portfolio-retro .retro-section:nth-child(even) {
+  background: hsl(var(--secondary) / .075);
+}
+
+.portfolio-retro .retro-section > div {
+  position: relative;
+}
+
+.portfolio-retro .retro-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: .98;
+}
+
+.portfolio-retro .retro-section h3 {
+  font-size: clamp(1.35rem, 2.7vw, 2rem);
+}
+
+.portfolio-retro .retro-section h2 + p,
+.portfolio-retro .retro-section .text-lg.text-muted-foreground {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.portfolio-retro .retro-section .text-muted-foreground {
+  color: hsl(var(--quiet));
+}
+
+.portfolio-retro .retro-section [class*="border-foreground"] {
+  border-color: hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section [class*="bg-card"],
+.portfolio-retro .retro-section [class*="bg-background"] {
+  background-color: hsl(var(--paper-light));
+}
+
+.portfolio-retro .retro-section [class*="shadow-"] {
+  box-shadow: 5px 5px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section .project-placeholder {
+  background-color: hsl(var(--secondary) / .25);
+}
+
+.portfolio-retro .retro-section .project-placeholder span {
+  background-color: hsl(var(--paper-light));
+}
+
+.portfolio-retro .retro-section .project-placeholder span:last-child {
+  border-color: hsl(var(--ink));
+  background-color: hsl(var(--orange));
+  color: hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section [role="tablist"] {
+  border: 2px solid hsl(var(--ink));
+  background: hsl(var(--paper-light));
+  box-shadow: 4px 4px 0 hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section [role="tab"] {
+  border: 1px solid transparent;
+}
+
+.portfolio-retro .retro-section [role="tab"][data-state="active"] {
+  background: hsl(var(--orange));
+  color: hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section [class*="bg-primary"] {
+  background-color: hsl(var(--orange));
+}
+
+.portfolio-retro .retro-section [class*="text-primary"] {
+  color: hsl(var(--orange));
+}
+
+.portfolio-retro .retro-section [class*="bg-secondary"] {
+  background-color: hsl(var(--secondary) / .18);
+}
+
+.portfolio-retro .retro-section [class*="bg-red-"],
+.portfolio-retro .retro-section [class*="bg-amber-"],
+.portfolio-retro .retro-section [class*="bg-green-"] {
+  border-color: hsl(var(--ink));
+  background: hsl(var(--secondary) / .22);
+  color: hsl(var(--ink));
+}
+
+.portfolio-retro .retro-section input,
+.portfolio-retro .retro-section textarea {
+  border: 2px solid hsl(var(--ink) / .65);
+  background: hsl(var(--paper-light));
+  color: hsl(var(--ink));
+  box-shadow: 3px 3px 0 hsl(var(--ink) / .2);
+}
+
+.portfolio-retro .retro-section input:focus,
+.portfolio-retro .retro-section textarea:focus {
+  border-color: hsl(var(--orange));
+  box-shadow: 3px 3px 0 hsl(var(--orange) / .35);
+}
+
+.portfolio-retro footer {
+  border-top: 0;
+  background: hsl(var(--ink));
+  color: hsl(var(--paper));
+}
+
+.portfolio-retro footer p,
+.portfolio-retro footer a,
+.portfolio-retro footer span {
+  color: hsl(var(--paper) / .78);
+}
+
+.portfolio-retro footer a:hover {
+  color: hsl(var(--orange));
+}
+
+.portfolio-retro footer [class*="border-t"] {
+  border-color: hsl(var(--paper) / .25);
+}
+
+@media (max-width: 767px) {
+  .portfolio-retro .container {
+    box-sizing: border-box;
+    width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  .portfolio-retro .hero-section > .container > div:first-child {
+    min-width: 0;
+    width: calc(100vw - 4rem);
+    max-width: calc(100vw - 4rem);
+  }
+
+  .portfolio-retro .hero-section h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 10.6vw, 2.7rem);
+    line-height: .98;
+    letter-spacing: -.075em;
+    white-space: nowrap;
+  }
+
+  .portfolio-retro .hero-section {
+    min-height: auto;
+    padding-top: 6.5rem;
+  }
+
+  .portfolio-retro .hero-section .border-t-2.pt-5 > .flex:first-child {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+    row-gap: .65rem;
+  }
+
+  .portfolio-retro .hero-section .border-t-2.pt-5 > .flex:first-child > label {
+    justify-self: start;
+    max-width: 100%;
+  }
+
+  .portfolio-retro .hero-section select {
+    max-width: 100%;
+  }
+
+  .portfolio-retro .hero-section [role="group"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .portfolio-retro .hero-section [role="group"] button {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+  }
+
+  .portfolio-retro .hero-section .hero-art {
+    width: calc(100% - 1rem);
+  }
+
+  .portfolio-retro .hero-section .hero-art-card {
+    box-shadow: 6px 6px 0 hsl(var(--ink));
+  }
+
+  .portfolio-retro .retro-section [role="tablist"] {
+    max-width: calc(100vw - 2rem);
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-retro *,
+  .portfolio-retro *::before,
+  .portfolio-retro *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

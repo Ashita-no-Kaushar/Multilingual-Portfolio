@@ -47,6 +47,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      "@portfolio": path.resolve(
+        import.meta.dirname,
+        "src/components/mockups/portfolio-refresh/current-source",
+      ),
       "@": path.resolve(import.meta.dirname, "src"),
     },
   },
