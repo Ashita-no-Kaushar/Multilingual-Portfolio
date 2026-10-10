@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "Abstract data visualization",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "data visualization"
+    },
+    {
+      "id": "project-2",
+      "description": "Machine learning model representation",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "neural network"
+    },
+    {
+      "id": "project-3",
+      "description": "Customer segmentation chart",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "business chart"
+    },
+    {
+      "id": "about-me",
+      "description": "Professional headshot",
+      "imageUrl": "https://picsum.photos/seed/104/400/400",
+      "imageHint": "portrait headshot"
+    }
+  ]
+}

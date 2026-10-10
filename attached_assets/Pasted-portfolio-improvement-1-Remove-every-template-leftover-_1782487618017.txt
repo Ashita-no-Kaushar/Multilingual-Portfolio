@@ -1,0 +1,46 @@
+portfolio improvement: 
+
+1. Remove every template leftover from project and report pages.  
+2. Delete all “if not used, delete this block” sections permanently.  
+3. Replace all placeholder text with real project-specific copy.  
+4. Replace all placeholder images with real charts, dashboards, model outputs, and workflow screenshots.  
+5. Fix all generic/demo links so every GitHub, Live, Docs, and Report button goes to a real destination.  
+6. Audit every CTA button and make sure none are dead or redundant.  
+7. Rewrite hero headline to be sharper and outcome-focused (who you help + what result you deliver).  
+8. Keep one dominant primary CTA across the full page flow.  
+9. Convert hero stats into proof-based numbers (real metrics, not generic labels).  
+10. Add a trust strip near the top (testimonial, mentor quote, achievements, logos, or certifications).  
+11. Add real profile photo and a clear “Open to internships/entry-level roles” signal.  
+12. Shorten About section into more scannable, high-impact copy.  
+13. Standardize all project cards to Problem, Approach, Result format.  
+14. Add measurable impact for each project (accuracy lift, time saved, revenue/risk effect, etc.).  
+15. Improve project detail pages with Role, Tools, Dataset, Timeline, and Outcome clarity.  
+16. Clean report pages so only relevant sections remain and all template scaffolding is removed.  
+17. Add a concise business recommendation/conclusion section to each report.  
+18. Upgrade experience entries with quantified bullets instead of only responsibility text.  
+19. Rework skills section to show evidence of skill use (project links, outcomes, tools used).  
+20. Strengthen contact section with clearer closing copy and backup contact options (email, LinkedIn, GitHub).  
+21. Improve mobile continuity (spacing, text length, CTA visibility, section rhythm).  
+22. Run accessibility pass (contrast, heading order, focus states, keyboard flow, alt text).  
+23. Run performance pass (image optimization, lazy loading, font and animation tuning).  
+24. Do final QA on all sections, links, and responsive breakpoints.  
+25. Add basic analytics tracking for CTA clicks and contact conversions, then publish.    what if we do this first i may give you some detalies which will help me later?
+26. Create a Public Safe Mode switch so unfinished sections show clean Coming Soon content instead of placeholders.  
+27. Move all editable text, links, stats, and labels into one central content source so later updates are fast.  
+28. Add a Claim Proof Sheet where every public metric maps to evidence (notebook, dashboard, report, or screenshot).  
+29. Do a privacy scrub for images, PDFs, and metadata before publish (EXIF, hidden author info, internal paths).  
+30. Add SEO share consistency: strong page titles, meta descriptions, canonical URLs, and custom social preview images per key page.  
+31. Add structured data for Person, Website, and Project to improve search understanding.  
+32. Protect contact form from spam with honeypot, rate limiting, and validation hardening.  
+33. Add monitoring for runtime errors and broken pages so public issues are caught quickly.  
+34. Add CI quality gates for lint, type check, accessibility checks, and basic Lighthouse thresholds.  
+35. Set performance budgets (image size, JS size, CLS/LCP targets) so future edits do not regress speed.  
+36. Define analytics event names before launch (hero click, project open, report open, contact submit) for clean tracking.  
+37. Create a release checklist and monthly maintenance routine (links, content freshness, mobile QA).  
+38. Run 5-user usability test (recruiter/friend mix) and apply top friction fixes before final content drop.
+39. social handles update
+40. all information of data science skill which i learned
+41. new preloader
+42. 404 and javascript error page update
+43. mobile friendly
+44. research paper if i have

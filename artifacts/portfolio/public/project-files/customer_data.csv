@@ -1,0 +1,4 @@
+customer_id,age,tenure_months,monthly_spend,churned
+C001,24,5,38.50,1
+C002,37,28,67.20,0
+C003,31,11,44.10,1

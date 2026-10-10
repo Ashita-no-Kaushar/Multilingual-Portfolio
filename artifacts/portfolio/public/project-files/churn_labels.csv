@@ -1,0 +1,4 @@
+customer_id,churn_label
+C001,1
+C002,0
+C003,1
